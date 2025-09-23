@@ -1,5 +1,5 @@
 <!-- Banner -->
-<h1 align="center">✨ Portfolio - Phí Hùng ✨</h1>
+<h1 align="center">✨ Portfolio - Phi Hùng ✨</h1>
 <p align="center">
   <em>Welcome to my personal portfolio repository!<br>
   This is where I showcase my projects, skills, and journey as a developer.</em>
