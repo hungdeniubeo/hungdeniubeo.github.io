@@ -8,7 +8,7 @@
 ---
 
 ## 🚀 About Me  
-👋 Xin chào, mình là **Phí Hùng**. Đây là portfolio cá nhân được xây dựng bằng **GitHub Pages**.  
+👋 Xin chào, mình là **Phi Hùng**. Đây là portfolio cá nhân được xây dựng bằng **GitHub Pages**.  
 Mục tiêu của mình là chia sẻ các dự án, kinh nghiệm học tập và công việc một cách trực quan, dễ tiếp cận.  
 
 - 🎨 Đam mê phát triển web và thiết kế giao diện.  
@@ -47,9 +47,9 @@ Mục tiêu của mình là chia sẻ các dự án, kinh nghiệm học tập v
 
 ## 📫 Contact Me  
 <p align="center">
-  <a href="mailto:youremail@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="mailto:phihung3922@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://github.com/hungdeniubeo"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="[https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/phi-h%C3%B9ng/)"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
 
 ---
