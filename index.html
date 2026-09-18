@@ -1,288 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio - Phi Hung</title>
-  <meta name="description" content="Phi Hung's Portfolio - Software Engineering Student and Web Developer">
-  <meta name="keywords" content="portfolio, web development, software engineering, frontend, react, javascript">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Phi Hung — IT Support and software engineering portfolio. Practical web, desktop, automation, and AI-focused projects.">
+  <meta name="keywords" content="Phi Hung, IT Support, Software Engineering, React, TypeScript, Tauri, Supabase, Portfolio">
+  <meta property="og:title" content="Phi Hung — IT Support & Software Engineering">
+  <meta property="og:description" content="Support mindset. Builder energy. Practical software for real workflows.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hungdeniubeo.github.io/">
+  <meta property="og:image" content="https://hungdeniubeo.github.io/assests/images/avatar.jpg">
+  <title>Phi Hung — IT Support & Software Engineering</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/cv.css">
-  <link rel="icon" type="image/x-icon" href="assests/images/favicon.png">
+  <link rel="icon" type="image/png" href="assests/images/favicon.png">
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <div class="logo">
-        <a href="#" id="logo-reload" class="logo-link">MyPortfolio</a>
-      </div>
-      <div class="nav-links">
+  <div class="page-glow glow-one" aria-hidden="true"></div>
+  <div class="page-glow glow-two" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Phi Hung home">
+        <span class="brand-mark">PH</span>
+        <span class="brand-copy"><strong>Phi Hung</strong><small>IT Support · Builder</small></span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#journey">Journey</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </div>
-      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </button>
+
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+          <span class="theme-sun" aria-hidden="true">☀</span>
+          <span class="theme-moon" aria-hidden="true">☾</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="intro reveal">
-        <h1 class="hero-animate h1">Hi, I'm Phi Hung</h1>
-        <p class="hero-animate p">Hello! I'm Nguyễn Hà Phi Hùng, a final‑year Software Engineering student at Saigon University with a passion for Web Development.</p>
-        <div class="hero-cta hero-animate cta">
-          <a href="#projects" class="cta-button primary">View My Work</a>
-          <a href="#contact" class="cta-button secondary">Get In Touch</a>
+  <main>
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> IT SUPPORT · SOFTWARE ENGINEERING</div>
+        <h1 id="hero-title">I turn everyday friction into <span class="gradient-text">useful software.</span></h1>
+        <p class="hero-lead">I work at the intersection of support, software engineering, QA, and practical automation — understanding the problem first, then building the smallest solution that actually helps.</p>
+
+        <div class="hero-role" aria-live="polite">
+          <span class="prompt">$</span>
+          <span id="role-text">Support mindset. Builder energy.</span>
+          <span class="cursor" aria-hidden="true"></span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="https://github.com/hungdeniubeo" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="hero-principles" aria-label="Working principles">
+          <span>Understand</span><i>→</i><span>Build</span><i>→</i><span>Validate</span><i>→</i><span>Improve</span>
         </div>
       </div>
-      <img src="assests/images/avatar.jpg" alt="Profile photo" class="reveal hero-animate avatar">
-    </section>
-    <div class="marquee">
-      <span>Front-end Developer • UI/UX Enthusiast • React • Vue • Node.js • Always Learning • Front-end Developer • UI/UX Enthusiast • React • Vue • Node.js • Always Learning • </span>
-    </div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-card about-card-hover about-animate">
-        <div class="about-intro" style="text-align:left; margin-bottom:2rem;">
-          <p style="font-size:1.15rem; margin-bottom:0.5rem;">Welcome to my personal corner!</p>
-          <p style="font-size:1.15rem;">I'm Phi Hùng, a Front‑end Developer where logical thinking meets creativity to craft intuitive, user‑friendly interfaces.</p>
-        </div>
-        <div class="about-details" style="text-align:left;">
-          <div style="margin-bottom:1.5rem;">
-            <div style="font-weight:700; font-size:1.13rem; margin-bottom:0.7rem; color:var(--accent-color); letter-spacing:0.2px;"><span style="margin-right:8px; font-size:1.3rem;">💡</span>What I'm passionate about:</div>
-            <ul style="list-style:none; padding-left:0; margin:0;">
-              <li style="margin-bottom:0.9rem;"><span style="font-weight:600; color:var(--primary-color); font-size:1.05rem;">🎯 Front-end Technologies:</span> Constantly mastering HTML5, CSS3, JavaScript/TypeScript, and frameworks like React, Vue, and Svelte.</li>
-              <li style="margin-bottom:0.9rem;"><span style="font-weight:600; color:var(--primary-color); font-size:1.05rem;">🎨 UX/UI Design:</span> Building responsive layouts, optimizing interactive experiences, and ensuring consistent aesthetics across all devices.</li>
-              <li><span style="font-weight:600; color:var(--primary-color); font-size:1.05rem;">⚡ Performance Optimization:</span> Analyzing, measuring, and improving page load speed, while minimizing resource usage for the smoothest experience.</li>
-            </ul>
+      <div class="hero-visual reveal">
+        <div class="profile-stage">
+          <div class="profile-ring ring-one"></div>
+          <div class="profile-ring ring-two"></div>
+          <div class="profile-card">
+            <div class="profile-image-wrap">
+              <img src="assests/images/avatar.jpg" alt="Phi Hung" class="profile-image">
+              <span class="profile-badge">PH</span>
+            </div>
+            <div class="profile-card-copy">
+              <p class="profile-kicker">CURRENT FOCUS</p>
+              <h2>Support × Code × Quality</h2>
+              <p>Building tools that make real workflows clearer, faster, and easier to maintain.</p>
+            </div>
+            <div class="profile-stack" aria-label="Current technologies">
+              <span>React</span><span>TypeScript</span><span>Supabase</span><span>Tauri</span>
+            </div>
           </div>
-          <div style="margin-bottom:1.5rem;">
-            <div style="font-weight:700; font-size:1.13rem; margin-bottom:0.7rem; color:var(--accent-color); letter-spacing:0.2px;"><span style="margin-right:8px; font-size:1.3rem;">🔎</span>On this website you'll find:</div>
-            <ul style="list-style:none; padding-left:0; margin:0;">
-              <li style="margin-bottom:0.9rem;"><span style="font-weight:600; color:var(--primary-color); font-size:1.05rem;">👤 About Me:</span> A brief introduction and my journey to becoming a Front‑end Developer.</li>
-              <li style="margin-bottom:0.9rem;"><span style="font-weight:600; color:var(--primary-color); font-size:1.05rem;">💼 Projects:</span> A showcase of real‑world products that illustrate my process from concept and design through development and completion.</li>
-              <li><span style="font-weight:600; color:var(--primary-color); font-size:1.05rem;">📈 Growth Journey:</span> Stories of successes, challenges, and how I've overcome obstacles throughout my learning and working experiences.</li>
-            </ul>
-          </div>
-          <div style="margin-top:2rem; font-size:1.08rem; color:var(--text-secondary);">
-            My goal is to continually refine my skills and deliver outstanding web experiences.<br>
-            <span style="color:var(--accent-color); font-weight:500;">Thanks for visiting—let's connect if you have a collaboration idea or just want to chat about technology!</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card reveal">
-          <div class="project-image">
-            <div class="project-placeholder">🚀</div>
-          </div>
-          <h3>E-Commerce Platform</h3>
-          <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product management, and payment integration.</p>
-          <div class="project-tech">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MongoDB</span>
-          </div>
-          <a href="#" style="color: var(--accent-color); font-weight:600;">View Details →</a>
-        </div>
-        <div class="project-card reveal">
-          <div class="project-image">
-            <div class="project-placeholder">📱</div>
-          </div>
-          <h3>Task Management App</h3>
-          <p>A responsive task management application with drag-and-drop functionality, real-time updates, and team collaboration features.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Vue.js</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">CSS3</span>
-          </div>
-          <a href="#" style="color: var(--accent-color); font-weight:600;">View Details →</a>
-        </div>
-        <div class="project-card reveal">
-          <div class="project-image">
-            <div class="project-placeholder">🎨</div>
-          </div>
-          <h3>Portfolio Website</h3>
-          <p>A modern, responsive portfolio website showcasing my skills and projects with smooth animations and professional design.</p>
-          <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-          </div>
-          <a href="#" style="color: var(--accent-color); font-weight:600;">View Details →</a>
+          <div class="floating-chip chip-one"><strong>01</strong><span>Notice friction</span></div>
+          <div class="floating-chip chip-two"><strong>04</strong><span>Ship & improve</span></div>
         </div>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill-card reveal">
-          <div class="skill-icon">💻</div>
-          <h3>Frontend Development</h3>
-          <p>Proficient in HTML5, CSS3, JavaScript, React, and Vue.js. Experienced in creating responsive and interactive user interfaces.</p>
-          <div class="skill-level">
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 55%"></div>
-            </div>
-            <span>55%</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🎨</div>
-          <h3>UI/UX Design</h3>
-          <p>Skilled in creating user-centered designs with focus on usability, accessibility, and modern design principles.</p>
-          <div class="skill-level">
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 40%"></div>
-            </div>
-            <span>40%</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">⚙️</div>
-          <h3>Backend Development</h3>
-          <p>Experience with Python, Java, JavaScript, and React for backend and server-side logic.</p>
-          <div class="skill-level">
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 30%"></div>
-            </div>
-            <span>30%</span>
-          </div>
+    <section class="ticker" aria-label="Technology interests">
+      <div class="ticker-track">
+        <span>IT Support</span><i>✦</i><span>Web Apps</span><i>✦</i><span>Desktop Tools</span><i>✦</i><span>QA Mindset</span><i>✦</i><span>Automation</span><i>✦</i><span>AI Experiments</span><i>✦</i>
+        <span>IT Support</span><i>✦</i><span>Web Apps</span><i>✦</i><span>Desktop Tools</span><i>✦</i><span>QA Mindset</span><i>✦</i><span>Automation</span><i>✦</i><span>AI Experiments</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section-shell section" id="about">
+      <div class="section-heading reveal">
+        <div><span class="section-index">01</span><span class="section-label">ABOUT</span></div>
+        <h2>Support taught me where software <span class="gradient-text">actually hurts.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass-card about-main reveal">
+          <p class="large-copy">I am Phi Hung. My day-to-day support mindset is simple: understand what the user is trying to do, find where the workflow breaks, and make the next attempt easier.</p>
+          <p>That naturally pulled me deeper into software engineering. I build web apps, desktop tools, APIs, scheduling systems, and experiments that connect real operational needs with practical code.</p>
+          <p>I care about readable interfaces, edge cases, permissions, testing, and maintainability — not only whether a feature works once.</p>
+        </article>
+
+        <div class="about-side">
+          <article class="mini-card reveal">
+            <span class="mini-icon">⌘</span>
+            <div><h3>Troubleshooting first</h3><p>Reproduce the problem, isolate the cause, then fix the workflow instead of masking the symptom.</p></div>
+          </article>
+          <article class="mini-card reveal">
+            <span class="mini-icon">◇</span>
+            <div><h3>Build for real use</h3><p>Prefer small useful tools, clear states, sensible defaults, and feedback users can understand.</p></div>
+          </article>
+          <article class="mini-card reveal">
+            <span class="mini-icon">✓</span>
+            <div><h3>Quality matters</h3><p>Happy paths are not enough. I actively look for awkward cases, conflicts, permission issues, and failure states.</p></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="journey">
-      <h2>Development Journey</h2>
-      <div class="journey-timeline reveal">
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-icon">🎓</div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-date">2020 - 2025</div>
-            <h3>Saigon University</h3>
-            <h4>Software Engineering</h4>
-            <p>Started my academic journey at Saigon University, majoring in Software Engineering. Here, I gained foundational knowledge in programming and software development.</p>
-            <div class="timeline-achievements">
-              <span class="achievement-tag">HTML/CSS</span>
-              <span class="achievement-tag">JavaScript</span>
-              <span class="achievement-tag">Java</span>
-            </div>
-          </div>
-        </div>
+    <section class="section-shell section" id="projects">
+      <div class="section-heading reveal">
+        <div><span class="section-index">02</span><span class="section-label">FEATURED WORK</span></div>
+        <h2>Projects built around <span class="gradient-text">real workflows.</span></h2>
+      </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-icon">💻</div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-date">2022 - 2023</div>
-            <h3>Exploring Frontend</h3>
-            <h4>React & Vue.js</h4>
-            <p>Began learning and practicing with modern frontend frameworks. Built my first projects and learned from the developer community.</p>
-            <div class="timeline-achievements">
-              <span class="achievement-tag">React</span>
-              <span class="achievement-tag">Vue.js</span>
-              <span class="achievement-tag">Responsive Design</span>
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-topline"><span class="project-number">01</span><span class="project-state">ACTIVE DEVELOPMENT</span></div>
+          <div class="project-visual schedule-web" aria-hidden="true">
+            <div class="visual-window">
+              <div class="window-bar"><span></span><span></span><span></span></div>
+              <div class="schedule-mock">
+                <div class="mock-sidebar"></div>
+                <div class="mock-main"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="project-body">
+            <div class="project-title-row"><div><p class="project-type">WEB APPLICATION</p><h3>ScheduleWork Web</h3></div><span class="project-arrow">↗</span></div>
+            <p>A workforce scheduling platform where employees submit availability and admins review constraints, build conflict-aware schedules, publish the official week, and export it.</p>
+            <div class="tag-list"><span>React 19</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>RLS</span></div>
+            <div class="project-links">
+              <a href="https://schedulework-web.vercel.app/" target="_blank" rel="noreferrer">Live app ↗</a>
+              <a href="https://github.com/hungdeniubeo/Schedulework-Web" target="_blank" rel="noreferrer">Source ↗</a>
+            </div>
+          </div>
+        </article>
 
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-icon">🚀</div>
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="project-number">02</span><span class="project-state">OFFLINE FIRST</span></div>
+          <div class="project-visual schedule-desktop" aria-hidden="true">
+            <div class="desktop-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="desktop-float">DRAG → DROP → EXPORT</div>
           </div>
-          <div class="timeline-content">
-            <div class="timeline-date">2023 - 2024</div>
-            <h3>Real-world Projects</h3>
-            <h4>Full-stack Development</h4>
-            <p>Participated in real-world projects, learned backend development with Node.js and MongoDB. Developed teamwork and project management skills.</p>
-            <div class="timeline-achievements">
-              <span class="achievement-tag">Node.js</span>
-              <span class="achievement-tag">MongoDB</span>
-              <span class="achievement-tag">API Development</span>
-            </div>
+          <div class="project-body">
+            <div class="project-title-row"><div><p class="project-type">DESKTOP APPLICATION</p><h3>ScheduleWork Desktop</h3></div><span class="project-arrow">↗</span></div>
+            <p>An offline weekly scheduler with drag-and-drop assignment, split shifts, conflict detection, staffing summaries, and high-resolution schedule export.</p>
+            <div class="tag-list"><span>Tauri 2</span><span>React</span><span>TypeScript</span><span>Rust</span><span>Tailwind</span></div>
+            <div class="project-links"><a href="https://github.com/hungdeniubeo/Schedulework" target="_blank" rel="noreferrer">Explore repository ↗</a></div>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item">
-          <div class="timeline-marker">
-            <div class="marker-icon">🎯</div>
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="project-number">03</span><span class="project-state">COMPUTER VISION</span></div>
+          <div class="project-visual traffic-sign" aria-hidden="true">
+            <div class="vision-reticle"></div>
+            <div class="vision-sign">30</div>
+            <span class="vision-label">prediction · confidence · frame</span>
           </div>
-          <div class="timeline-content">
-            <div class="timeline-date">2024 - Present</div>
-            <h3>Frontend Specialization</h3>
-            <h4>UI/UX & Performance</h4>
-            <p>Focused on creating the best user experiences. Learned about UI/UX design, performance optimization, and frontend best practices.</p>
-            <div class="timeline-achievements">
-              <span class="achievement-tag">UI/UX Design</span>
-              <span class="achievement-tag">Performance</span>
-              <span class="achievement-tag">Best Practices</span>
-            </div>
+          <div class="project-body">
+            <div class="project-title-row"><div><p class="project-type">AI / COMPUTER VISION</p><h3>Traffic Sign Recognition</h3></div><span class="project-arrow">↗</span></div>
+            <p>A CNN-based recognition project using the GTSRB dataset with image prediction, webcam inference, preprocessing, and model evaluation.</p>
+            <div class="tag-list"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span></div>
+            <div class="project-links"><a href="https://github.com/hungdeniubeo/Traffic-sign" target="_blank" rel="noreferrer">Explore repository ↗</a></div>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item future">
-          <div class="timeline-marker">
-            <div class="marker-icon">🌟</div>
+        <article class="project-card reveal">
+          <div class="project-topline"><span class="project-number">04</span><span class="project-state">FULL STACK</span></div>
+          <div class="project-visual bus-booking" aria-hidden="true">
+            <div class="route-line"><span>A</span><i></i><span>B</span></div>
+            <div class="ticket"><small>BUS BOOKING</small><strong>SGN → DESTINATION</strong><em>SEAT · SCHEDULE · RESERVE</em></div>
           </div>
-          <div class="timeline-content">
-            <div class="timeline-date">Future</div>
-            <h3>Next Goals</h3>
-            <h4>Advanced Technologies</h4>
-            <p>Continue learning and developing with new technologies such as TypeScript, Next.js, and other modern frameworks. My goal is to become a professional Frontend Developer.</p>
-            <div class="timeline-achievements">
-              <span class="achievement-tag">TypeScript</span>
-              <span class="achievement-tag">Next.js</span>
-              <span class="achievement-tag">Advanced JS</span>
-            </div>
+          <div class="project-body">
+            <div class="project-title-row"><div><p class="project-type">FULL-STACK WEB</p><h3>Bus Booking Platform</h3></div><span class="project-arrow">↗</span></div>
+            <p>A booking project for browsing routes, checking schedules and seat availability, and making reservations through a React client and REST backend.</p>
+            <div class="tag-list"><span>React</span><span>Vite</span><span>Node.js</span><span>REST API</span><span>MySQL</span></div>
+            <div class="project-links"><a href="https://github.com/hungdeniubeo/Busbooking" target="_blank" rel="noreferrer">Explore repository ↗</a></div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm" class="reveal">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="connect-links reveal">
-        <p style="font-weight:600; margin-bottom:0.5rem;">Let's connect</p>
-        <a href="https://github.com/hungdeniubeo" target="_blank" class="connect-icon" aria-label="GitHub">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .268.18.58.688.482C19.138 20.203 22 16.447 22 12.02 22 6.484 17.523 2 12 2Z" fill="#2C3E50"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/phi-h%C3%B9ng/" target="_blank" class="connect-icon" aria-label="LinkedIn">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.966 0-1.75-.79-1.75-1.76 0-.97.784-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.784 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v5.61z" fill="#0A66C2"/></svg>
-        </a>
-        <a href="https://www.facebook.com/phi.hung.794694" target="_blank" class="connect-icon" aria-label="Facebook">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0" fill="#1877F3"/></svg>
-        </a>
+    <section class="section-shell section" id="toolbox">
+      <div class="section-heading reveal">
+        <div><span class="section-index">03</span><span class="section-label">TOOLBOX</span></div>
+        <h2>Tools I use to go from <span class="gradient-text">problem to shipped.</span></h2>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card reveal">
+          <div class="tool-card-head"><span>01</span><h3>Interfaces</h3></div>
+          <p>Building responsive products and lightweight internal tools.</p>
+          <div class="tool-cloud"><span>React</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>Vite</span></div>
+        </article>
+        <article class="tool-card reveal">
+          <div class="tool-card-head"><span>02</span><h3>Services & Data</h3></div>
+          <p>Connecting product logic, APIs, authentication, and persistence.</p>
+          <div class="tool-cloud"><span>Node.js</span><span>Java</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span><span>MySQL</span><span>PostgreSQL</span><span>Supabase</span></div>
+        </article>
+        <article class="tool-card reveal">
+          <div class="tool-card-head"><span>03</span><h3>Desktop & Delivery</h3></div>
+          <p>Packaging tools, working across systems, and shipping changes safely.</p>
+          <div class="tool-cloud"><span>Tauri</span><span>Rust</span><span>Git</span><span>GitHub Actions</span><span>Docker</span><span>Linux</span><span>Vercel</span></div>
+        </article>
+        <article class="tool-card reveal">
+          <div class="tool-card-head"><span>04</span><h3>Quality & Support</h3></div>
+          <p>Finding edge cases, reproducing bugs, and keeping the user workflow visible.</p>
+          <div class="tool-cloud"><span>Manual QA</span><span>Test Cases</span><span>Postman</span><span>Troubleshooting</span><span>Bug Reporting</span><span>Access Control</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell section" id="process">
+      <div class="section-heading reveal">
+        <div><span class="section-index">04</span><span class="section-label">PROCESS</span></div>
+        <h2>A simple loop for making software <span class="gradient-text">more useful.</span></h2>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-card reveal"><span class="process-no">01</span><div class="process-icon">⌕</div><h3>Notice</h3><p>Find the repeated friction, confusing step, manual workaround, or support pattern.</p></article>
+        <article class="process-card reveal"><span class="process-no">02</span><div class="process-icon">⌘</div><h3>Build</h3><p>Turn the problem into the smallest useful feature, tool, or workflow improvement.</p></article>
+        <article class="process-card reveal"><span class="process-no">03</span><div class="process-icon">✓</div><h3>Validate</h3><p>Test real scenarios, awkward inputs, permissions, edge cases, and failure states.</p></article>
+        <article class="process-card reveal"><span class="process-no">04</span><div class="process-icon">↻</div><h3>Simplify</h3><p>Use feedback to reduce steps, improve clarity, and leave the code easier to change.</p></article>
+      </div>
+    </section>
+
+    <section class="section-shell section contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <div class="contact-copy">
+          <span class="section-label">LET'S CONNECT</span>
+          <h2>Have a workflow worth <span class="gradient-text">making easier?</span></h2>
+          <p>I enjoy practical software, support-driven improvements, QA, automation, and learning by building.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:phihung3922@gmail.com">Send an email <span aria-hidden="true">↗</span></a>
+          <button class="button secondary copy-email" type="button" data-email="phihung3922@gmail.com">Copy email</button>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/hungdeniubeo" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.youtube.com/@phihung3922-t6f" target="_blank" rel="noreferrer">YouTube ↗</a>
+          <a href="https://www.facebook.com/phi.hung.794694" target="_blank" rel="noreferrer">Facebook ↗</a>
+          <a href="https://www.tiktok.com/@hungdeniubeo" target="_blank" rel="noreferrer">TikTok ↗</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Phi Hung. All rights reserved.</p>
+  <footer class="footer section-shell">
+    <div><span class="brand-mark small">PH</span><p>Support mindset. Builder energy. Quality focus.</p></div>
+    <p>© <span id="year"></span> Phi Hung · Built with HTML, CSS & JavaScript.</p>
   </footer>
-  <button class="back-to-top" aria-label="Back to top">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 19V5M12 5L5 12M12 5l7 7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
   <script src="js/main.js"></script>
 </body>
 </html>
