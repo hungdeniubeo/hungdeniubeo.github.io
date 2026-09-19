@@ -139,4 +139,46 @@
       });
     });
   }
+
+  var scrollProgress = document.querySelector(".scroll-progress span");
+  var cursorSpotlight = document.querySelector(".cursor-spotlight");
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var finePointer = window.matchMedia && window.matchMedia("(pointer: fine)").matches;
+
+  function updateProgress() {
+    if (!scrollProgress) return;
+    var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = maxScroll > 0 ? Math.min((window.scrollY || window.pageYOffset) / maxScroll, 1) : 0;
+    scrollProgress.style.transform = "scaleX(" + progress + ")";
+  }
+
+  updateProgress();
+  window.addEventListener("scroll", updateProgress, { passive: true });
+  window.addEventListener("resize", updateProgress, { passive: true });
+
+  if (cursorSpotlight && finePointer && !reduceMotion) {
+    window.addEventListener("pointermove", function (event) {
+      cursorSpotlight.style.left = event.clientX + "px";
+      cursorSpotlight.style.top = event.clientY + "px";
+      cursorSpotlight.style.opacity = "1";
+    }, { passive: true });
+
+    document.documentElement.addEventListener("mouseleave", function () {
+      cursorSpotlight.style.opacity = "0";
+    });
+  }
+
+  if (finePointer && !reduceMotion) {
+    document.querySelectorAll(".project-card, .tool-card, .mini-card, .process-card, .profile-card").forEach(function (card) {
+      card.classList.add("pointer-glow");
+      card.addEventListener("pointermove", function (event) {
+        var rect = card.getBoundingClientRect();
+        var x = ((event.clientX - rect.left) / rect.width) * 100;
+        var y = ((event.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty("--mx", x + "%");
+        card.style.setProperty("--my", y + "%");
+      }, { passive: true });
+    });
+  }
+
 })();
