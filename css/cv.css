@@ -535,6 +535,12 @@ html[data-theme="light"] body::before {
 .mini-card,
 .process-card,
 .profile-card { isolation: isolate; }
+
+.tool-card,
+.mini-card {
+  position: relative;
+  overflow: hidden;
+}
 .pointer-glow::before {
   content: "";
   position: absolute;
